@@ -12,6 +12,11 @@
   },
   "author": "faicon.com",
   "license": "MIT",
+  "dependencies": {
+    "react": ">=16.2.0",
+    "native-base": ">=2.3.8",
+    "@expo/vector-icons": "^6.2.2"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.17.0",
@@ -19,7 +24,6 @@
     "eslint-plugin-react": "^7.6.1"
   },
   "peerDependencies": {
-    "native-base": ">=2.3.8",
-    "react": ">=16.2.0"
+    "expo": ">=25.0.0"
   }
 }
