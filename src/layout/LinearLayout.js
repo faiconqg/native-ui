@@ -10,10 +10,12 @@ export default class LinearLayout extends BaseComponent {
     cover: PropTypes.bool,
     flex: PropTypes.number,
     gravity: PropTypes.string,
+    enabled: PropTypes.bool
   }
 
   static defaultProps = {
     gravity: '',
+    enabled: true,
   }
 
   resolveGravity = type => {
@@ -52,6 +54,7 @@ export default class LinearLayout extends BaseComponent {
       return (
         <ScrollView
           contentContainerStyle={style}
+          pointerEvents={this.props.enabled ? 'auto' : 'none'}
         >
           {this.props.children}
         </ScrollView>
@@ -60,6 +63,7 @@ export default class LinearLayout extends BaseComponent {
       return (
         <View
           style={style}
+          pointerEvents={this.props.enabled ? 'auto' : 'none'}
         >
           {this.props.children}
         </View>
