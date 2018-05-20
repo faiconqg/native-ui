@@ -1,6 +1,6 @@
 {
   "name": "@faicon/native-ui",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "UI components for React Native. https://github.com/faiconqg/native-ui",
   "main": "src/index.js",
   "files": [
@@ -13,9 +13,9 @@
   "author": "faicon.com",
   "license": "MIT",
   "dependencies": {
-    "react": ">=16.2.0",
+    "@expo/vector-icons": "^6.2.2",
     "native-base": ">=2.3.8",
-    "@expo/vector-icons": "^6.2.2"
+    "react": ">=16.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
