@@ -16,7 +16,7 @@ export default class Button extends BaseComponent {
     return (
       <NativeButton
         style={{
-          backgroundColor: this.props.color || Theme.colorAccent,
+          backgroundColor: this.props.color || Theme.colors.accent,
           alignSelf: this.resolveAlign(),
           margin: this.resolveMargin()
         }}

@@ -1,19 +1,18 @@
 export default {
-  colorPrimaryDark: '#4a6832',
-  colorPrimary: '#71ac45',
-  colorAccent: '#ff9736',
-  colorAccentDark: '#976329',
-  colorAccentExtra: '#ffd93c',
-  tabIconDefault: '#ccc',
+  colors: {
+    light: '#FFFFFF',
+    background: '#fbfbfb',
+    primaryDark: '#4a6832',
+    primary: '#71ac45',
+    accent: '#ff9736',
+    accentDark: '#976329',
+    accentExtra: '#ffd93c',
+    tabIconDefault: '#ccc',
+    border: '#e2e2e2',
+    text: 'rgba(96,100,109, 1)',
+    textAlpha: 'rgba(96,100,109, 0.5)'
+  },
   setColors(colors) {
-    if (colors.default) {
-      colors = colors.default
-    }
-    this.colorPrimary = colors.colorPrimary
-    this.colorPrimaryDark = colors.colorPrimaryDark
-    this.colorAccent = colors.colorAccent
-    this.colorAccentDark = colors.colorAccentDark
-    this.colorAccentExtra = colors.colorAccentExtra
-    this.tabIconDefault = colors.tabIconDefault
+    Object.assign(this.colors, colors)
   }
 }
